@@ -1,0 +1,90 @@
+{
+  "name": "postcss-ordered-values",
+  "version": "2.2.3",
+  "description": "Ensure values are ordered consistently in your CSS.",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "LICENSE-MIT"
+  ],
+  "scripts": {
+    "contributorAdd": "all-contributors add",
+    "contributorGenerate": "all-contributors generate",
+    "pretest": "eslint src",
+    "prepublish": "del-cli dist && BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/",
+    "test": "ava",
+    "test-012": "ava"
+  },
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "all-contributors-cli": "^3.0.5",
+    "ava": "^0.17.0",
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.9.0",
+    "del-cli": "^0.2.0",
+    "eslint": "^3.0.0",
+    "eslint-config-cssnano": "^3.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "homepage": "https://github.com/ben-eb/postcss-ordered-values",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "beneb.info@gmail.com",
+    "url": "http://beneb.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-eb/postcss-ordered-values.git"
+  },
+  "dependencies": {
+    "postcss": "^5.0.4",
+    "postcss-value-parser": "^3.0.1"
+  },
+  "ava": {
+    "require": "babel-register"
+  },
+  "eslintConfig": {
+    "extends": "cssnano"
+  },
+  "gitHead": "61087c7650524c02ec9b8d126b9ba63fec50f4b4",
+  "bugs": {
+    "url": "https://github.com/ben-eb/postcss-ordered-values/issues"
+  },
+  "_id": "postcss-ordered-values@2.2.3",
+  "_shasum": "eec6c2a67b6c412a8db2042e77fe8da43f95c11d",
+  "_from": "postcss-ordered-values@>=2.1.0 <3.0.0",
+  "_npmVersion": "3.10.8",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "beneb",
+    "email": "beneb.info@gmail.com"
+  },
+  "dist": {
+    "shasum": "eec6c2a67b6c412a8db2042e77fe8da43f95c11d",
+    "tarball": "https://registry.npmjs.org/postcss-ordered-values/-/postcss-ordered-values-2.2.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "beneb",
+      "email": "beneb.info@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/postcss-ordered-values-2.2.3.tgz_1484048652569_0.010152848903089762"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/postcss-ordered-values/-/postcss-ordered-values-2.2.3.tgz",
+  "readme": "ERROR: No README data found!"
+}

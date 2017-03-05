@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="accidentalsregular" horiz-adv-x="2048" >
+<font-face units-per-em="2048" ascent="1638" descent="-410" />
+<missing-glyph horiz-adv-x="500" />
+<glyph horiz-adv-x="0" />
+<glyph unicode="&#xd;" horiz-adv-x="682" />
+<glyph unicode="&#x2000;" horiz-adv-x="1024" />
+<glyph unicode="&#x2001;" />
+<glyph unicode="&#x2002;" horiz-adv-x="1024" />
+<glyph unicode="&#x2003;" />
+<glyph unicode="&#x2004;" horiz-adv-x="682" />
+<glyph unicode="&#x2005;" horiz-adv-x="512" />
+<glyph unicode="&#x2006;" horiz-adv-x="341" />
+<glyph unicode="&#x2007;" horiz-adv-x="341" />
+<glyph unicode="&#x2008;" horiz-adv-x="256" />
+<glyph unicode="&#x2009;" horiz-adv-x="409" />
+<glyph unicode="&#x200a;" horiz-adv-x="113" />
+<glyph unicode="&#x202f;" horiz-adv-x="409" />
+<glyph unicode="&#x205f;" horiz-adv-x="512" />
+<glyph unicode="&#x266d;" horiz-adv-x="876" d="M170 1464q30 22 62 22t66 -22l-16 -818q90 82 214 82q92 0 151 -71t59 -171q0 -66 -37 -126t-78 -95t-119 -93t-114 -86q-12 -12 -30 -36t-36 -39t-40 -15t-38 17t-16 41zM294 298q0 -78 12 -158q94 82 108 96q46 48 74 104q36 66 36 132q0 62 -26 110t-74 48 q-56 -2 -90 -46q-36 -44 -38 -106l-2 -156v-24z" />
+<glyph unicode="&#x266e;" horiz-adv-x="696" d="M170 1474q32 12 50 12q22 0 52 -12l-6 -358l204 38h8q34 0 34 -32l14 -1108q-30 -16 -48 -16q-26 0 -48 16l4 356l-206 -38h-4q-36 0 -36 34zM256 526l180 34l6 400l-180 -34z" />
+<glyph unicode="&#x266f;" horiz-adv-x="888" d="M168 346v120q0 28 24 40l94 32v324l-66 -24h-14q-18 0 -28 12t-10 26v122q0 26 24 36l94 34v318q0 10 12 26q10 16 24 16q16 0 26 -12q12 -16 12 -30v-290l168 60v322q0 12 12 24t26 12q10 0 24 -12q12 -10 12 -24v-296l66 24q4 6 14 6q20 0 28 -12q10 -14 10 -32v-120 q0 -28 -24 -38l-94 -34v-320l66 20q4 4 14 4q18 0 28 -12t10 -30v-122q0 -26 -24 -36l-94 -34v-318q0 -12 -12 -26q-10 -12 -24 -12t-26 12t-12 26v292l-168 -62v-320q0 -14 -12 -26t-26 -12q-12 0 -24 12t-12 26v294l-66 -24q-4 -4 -14 -4q-20 0 -28 12q-10 16 -10 30z M360 566l168 60v324l-168 -62v-322z" />
+<glyph unicode="&#xe000;" horiz-adv-x="1000" d="M0 0z" />
+<glyph unicode="&#x1d12a;" horiz-adv-x="1020" d="M170 28l20 218q0 26 28 26q150 -4 224 70q-72 70 -224 70q-28 0 -28 26l-20 218q0 8 7 17t13 9h6l220 -20q24 -8 24 -28q-4 -148 70 -224q70 72 70 224q0 20 26 28l218 20h6q4 0 14 -8q6 -8 6 -18l-20 -218q0 -26 -26 -26q-150 4 -226 -70q72 -70 224 -70q28 0 28 -26 l20 -218q0 -8 -7 -17t-13 -9h-6l-218 20q-26 8 -26 28q4 148 -70 224q-70 -72 -70 -224q0 -20 -24 -28l-220 -20h-6q-4 0 -14 8q-6 8 -6 18z" />
+<glyph unicode="&#x1d12b;" horiz-adv-x="1264" d="M170 1472q30 20 64 20t66 -20l-20 -820q68 82 168 82q68 0 122 -52l-16 790q32 20 64 20q36 0 64 -20l-12 -820q90 82 206 82q92 0 155 -71t63 -169q0 -66 -37 -128t-79 -97t-121 -92t-111 -87q-14 -10 -32 -36t-35 -41t-39 -15t-39 18t-17 42l-6 252q-38 -46 -127 -125 t-105 -95q-10 -10 -26 -36t-31 -41t-37 -15t-38 18t-16 42zM276 302q0 -88 6 -162q170 162 170 336q0 158 -78 158q-46 0 -70 -44t-24 -106l-4 -160v-22zM680 302q0 -94 10 -158q206 176 206 332q0 62 -24 112q-22 46 -72 46q-48 2 -80 -44q-32 -42 -36 -108l-2 -154v-14 q-2 -10 -2 -12z" />
+</font>
+</defs></svg> 

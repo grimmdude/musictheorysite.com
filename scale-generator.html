@@ -1,0 +1,73 @@
+---
+layout: default
+title:  Scale Generator
+seo_title: Scale Generator | Music Theory Site
+description: Free online music theory tool for generating major, natural minor, and harmonic minor scales.  Shows diatonic triad notes and names, relative minor or relative major keys, and more...
+keywords: music,theory,help,clefs,major,minor,key,signature,treble,bass,alto,tenor,notate,notating,transcriptions,transcribe,read,how,use,transpose
+---
+<form id="scale_select">
+	<select id="root" class="form-control" style="display:inline;width:100px;">
+		<option value="0">C</option>
+		<option value="1">Db (C#)</option>
+		<option value="2">D</option>
+		<option value="3">Eb</option>
+		<option value="4">E</option>
+		<option value="5">F</option>
+		<option value="6">F# (Gb)</option>
+		<option value="7">G</option>
+		<option value="8">Ab (G#)</option>
+		<option value="9">A</option>
+		<option value="10">Bb</option>
+		<option value="11">B</option>  
+	</select>
+	<select id="scale_type" class="form-control" style="display:inline;width:200px;">
+		<option value="major">Major</option>
+		<option value="natural_minor">Natural Minor</option>
+		<option value="harmonic_minor">Harmonic Minor</option>
+		<!--<option value="melodic_minor">Melodic Minor</option>-->
+		<!--<option value="blues">Blues</option>-->
+	</select>
+</form>
+<table class="table table-condensed">
+	<tr>
+		<th width="140">Scale:</th>
+		<td class="display" id="display_scale"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th width="140">Pentatonic Scale:</th>
+		<td class="display" id="display_pent_scale"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th width="140">Diatonic Triads:</th>
+		<td class="display" id="display_triad_names" width="160"></td>
+		<td class="display" id="display_triad_notes"></td>
+	</tr>
+	<tr>
+		<th width="140">Relative Key:</th>
+		<td class="display" id="display_relative"></td>
+		<td></td>
+	</tr>
+</table>
+<!--<h2>Create Your Own Scale</h2>
+<div id="user_scale"></div>
+<form id="user_create">
+	Root
+	<input type="text" />
+	<input type="text" />
+	<input type="text" />
+	<input type="text" />
+</form>-->
+<g:plusone annotation="inline"></g:plusone>
+<h2>About Scale Generator</h2>
+<p>
+	Scale Generator is a free online music theory tool for all musicians no matter the skill level.  This generator doesn't merely display scales and chords which are known to be true.  
+	It actually creates them on the fly every time you select a key by using the correct intervals for that scale type.  Use this tool alongside your music theory lessons, guitar lessons, violin lessons etc. to better your understanding 
+	and memorization of scale structures and chords.
+</p>
+<p>
+	This free online music theory tool can display <a href="/major-scales/">major</a>, <a href="/minor-scales/#natural_minor">natural minor</a>, or <a href="minor-scales/#harmonic_minor">harmonic minor</a> scale types in any key along with 
+	the pentatonic scale, diatonic triad notes and names, and relative key.  If you have any comments or suggestions please feel free to 
+	<a href="/contact/" title="Send me an email" target="_blank">send them along</a>.
+</p>

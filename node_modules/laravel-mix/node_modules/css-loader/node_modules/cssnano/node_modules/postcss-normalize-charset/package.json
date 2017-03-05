@@ -1,0 +1,69 @@
+{
+  "name": "postcss-normalize-charset",
+  "version": "1.1.1",
+  "description": "Add necessary or remove extra charset with PostCSS",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "charset"
+  ],
+  "author": {
+    "name": "Bogdan Chadkin",
+    "email": "trysound@yandex.ru"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-eb/postcss-charset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ben-eb/postcss-charset/issues"
+  },
+  "homepage": "https://github.com/ben-eb/postcss-charset",
+  "dependencies": {
+    "postcss": "^5.0.5"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^1.4.1",
+    "postcss-devtools": "^1.1.1"
+  },
+  "scripts": {
+    "test": "eslint index.js test && ava"
+  },
+  "gitHead": "e5df2dafa6942e6aac3beef7a509560a60b522f7",
+  "_id": "postcss-normalize-charset@1.1.1",
+  "_shasum": "ef9ee71212d7fe759c78ed162f61ed62b5cb93f1",
+  "_from": "postcss-normalize-charset@>=1.1.0 <2.0.0",
+  "_npmVersion": "3.10.2",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "beneb",
+    "email": "beneb.info@gmail.com"
+  },
+  "dist": {
+    "shasum": "ef9ee71212d7fe759c78ed162f61ed62b5cb93f1",
+    "tarball": "https://registry.npmjs.org/postcss-normalize-charset/-/postcss-normalize-charset-1.1.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "beneb",
+      "email": "beneb.info@gmail.com"
+    },
+    {
+      "name": "trysound",
+      "email": "trysound@yandex.ru"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/postcss-normalize-charset-1.1.1.tgz_1478619115559_0.3066741053480655"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/postcss-normalize-charset/-/postcss-normalize-charset-1.1.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

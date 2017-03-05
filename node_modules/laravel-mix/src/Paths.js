@@ -1,0 +1,43 @@
+let path = require('path');
+
+class Paths {
+    /**
+     * Create a new Paths instance.
+     */
+    constructor() {
+        this.rootPath = path.resolve(__dirname, '../../../');
+    }
+
+
+    /**
+     * Set the root path to resolve webpack.mix.js.
+     *
+     * @param {string} path
+     */
+    setRootPath(path) {
+        this.rootPath = path;
+
+        return this;
+    }
+
+
+    /**
+     * Determine the path to the user's webpack.mix.js file.
+     */
+    mix() {
+        return this.root('webpack.mix');
+    }
+
+
+    /**
+     * Determine the project root.
+     *
+     * @param {string|null} rootPath
+     * @param {string|null} append
+     */
+    root(append = '') {
+        return path.resolve(this.rootPath, append);
+    }
+}
+
+module.exports = Paths;

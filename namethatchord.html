@@ -1,0 +1,331 @@
+---
+layout: default
+title: Name That Chord - Online Guitar Chord Finder &amp; Guitar Chord Identifier
+seo_title: Name That Chord - Online Guitar Chord Finder &amp; Guitar Chord Identifier | Music Theory Site
+description: Free online tool to identify and discover guitar chords and shapes.
+keywords: music,theory,help,clefs,major,minor,key,signature,treble,bass,alto,tenor,notate,notating,transcriptions,transcribe,read,how,use,transpose
+---
+<style type="text/css">
+		#lower table {
+			margin-top:28px;
+			margin-bottom:18px;
+			font-size:20px;
+		}
+
+		table td {
+			padding:5px;
+			border:none;
+		}
+
+		#lower table tr {
+			border-bottom:1px solid #ccc;
+		}
+
+		#stored_chords {
+			overflow:hidden;
+			margin-bottom:10px;
+		}
+		#guitar {
+			position:relative;
+			background-image:url(/assets/img/guitar.jpg);
+			background-repeat: no-repeat;
+			background-position:-3px -15px;
+			width:700px;
+			height:148px;
+			margin-left:23px;
+		}
+		#guitar a:link, #guitar a:visited {text-decoration:none;}
+
+		.single_dot {
+			width:7px;
+			height:7px;
+			background-color:black;
+			position:absolute;
+			-moz-border-radius:9px;
+			-webkit-border-radius:9px;
+			border-radius:9px;
+			top:-12px;
+			margin-left:5px;
+		}
+
+		#double_dot1 {
+			 left:579px;
+		}
+
+		#double_dot2 {
+			left:594px;
+		}
+
+		#note_selectors {
+			position:absolute;
+			top:-16px;
+		}
+
+		#note_selectors a {
+			line-height:12px;
+			padding:2px;
+			text-align:center;
+			text-decoration:none;
+			-moz-border-radius:25px;
+			-webkit-border-radius:25px;
+			border-radius:25px;
+			border:1px solid #000000;
+			color:#fff;
+			font-size:11px;
+			display:block;
+			width:18px;
+			height:18px;
+			background-color:green;
+			position:absolute;
+			color:#ffffff !important;
+		}
+
+		#note_selectors a.selected, #note_selectors a:hover {
+			background-color:red;
+		}
+
+		#e_notes a {
+			top:18px;
+		}
+
+		#B_notes a {
+			top:41px;
+		}
+
+		#G_notes a {
+			top:62px;
+		}
+
+		#D_notes a {
+			top:84px;
+		}
+
+		#A_notes a {
+			top:105px;
+		}
+
+		#E_notes a {
+			top:126px;
+		}
+
+		.fret_0 {
+			left:-20px;
+
+		}
+
+		.fret_1 {
+			left:22px;
+		}
+
+		.fret_2 {
+			left:88px;
+		}
+
+		.fret_3 {
+			left:154px;
+
+		}
+
+		.fret_4 {
+			left:213px;
+		}
+
+		.fret_5 {
+			left:272px;
+		}
+
+		.fret_6 {
+			left:325px;
+		}
+
+		.fret_7 {
+			left:376px;
+
+		}
+
+		.fret_8 {
+			left:422px;
+		}
+
+		.fret_9 {
+			left:467px;
+		}
+
+		.fret_10 {
+			left:509px;
+		}
+
+		.fret_11 {
+			left:549px;
+		}
+
+		.fret_12 {
+			left:587px;
+		}
+
+		.fret_13 {
+			left:622px;
+		}
+
+		.fret_14 {
+			left:655px;
+		}
+	</style>
+<div id='guitar'>
+			<div class="single_dot fret_3"></div>
+			<div class="single_dot fret_5"></div>
+			<div class="single_dot fret_7"></div>
+			<div class="single_dot fret_9"></div>
+			<div id="double_dot1" class="single_dot"></div>
+			<div id="double_dot2" class="single_dot"></div>
+			<div id="note_selectors">
+				<div id="e_notes">
+					<a class="e3">E</a>
+					<a class="f3">F</a>
+					<a class="fsharp3">F#</a>
+					<a class="g3">G</a>
+					<a class="gsharp3">Ab</a>
+					<a class="a3">A</a>
+					<a class="bb3">Bb</a>
+					<a class="b3">B</a>
+					<a class="c4">C</a>
+					<a class="csharp4">Db</a>
+					<a class="d4">D</a>
+					<a class="eb4">Eb</a>
+					<a class="e4">E</a>
+					<a class="f4">F</a>
+					<a class="fsharp4">F#</a>	
+				</div>
+				<div id="B_notes">
+					<a class="b2">B</a>
+					<a class="c3">C</a>
+					<a class="csharp3">Db</a>
+					<a class="d3">D</a>
+					<a class="eb3">Eb</a>
+					<a class="e3">E</a>
+					<a class="f3">F</a>
+					<a class="fsharp3">F#</a>
+					<a class="g3">G</a>
+					<a class="gsharp3">Ab</a>
+					<a class="a3">A</a>
+					<a class="bb3">Bb</a>
+					<a class="b3">B</a>
+					<a class="c4">C</a>
+					<a class="csharp4">Db</a>
+				</div>
+				<div id="G_notes">
+					<a class="g2">G</a>
+					<a class="gsharp2">Ab</a>
+					<a class="a2">A</a>
+					<a class="bb2">Bb</a>
+					<a class="b2">B</a>
+					<a class="c3">C</a>
+					<a class="csharp3">Db</a>
+					<a class="d3">D</a>
+					<a class="eb3">Eb</a>
+					<a class="e3">E</a>
+					<a class="f3">F</a>
+					<a class="fsharp3">F#</a>
+					<a class="g3">G</a>
+					<a class="gsharp3">Ab</a>
+					<a class="a3">A</a>
+				</div>
+				<div id="D_notes">
+					<a class="d2">D</a>
+					<a class="eb2">Eb</a>
+					<a class="e2">E</a>
+					<a class="f2">F</a>
+					<a class="fsharp2">F#</a>
+					<a class="g2">G</a>
+					<a class="gsharp2">Ab</a>
+					<a class="a2">A</a>
+					<a class="bb2">Bb</a>
+					<a class="b2">B</a>
+					<a class="c3">C</a>
+					<a class="csharp3">Db</a>
+					<a class="d3">D</a>
+					<a class="eb3">Eb</a>
+					<a class="e3">E</a>
+				</div>
+				<div id="A_notes">
+					<a class="a1">A</a>
+					<a class="bb1">Bb</a>
+					<a class="b1">B</a>
+					<a class="c2">C</a>
+					<a class="csharp2">Db</a>
+					<a class="d2">D</a>
+					<a class="eb2">Eb</a>
+					<a class="e2">E</a>
+					<a class="f2">F</a>
+					<a class="fsharp2">F#</a>
+					<a class="g2">G</a>
+					<a class="gsharp2">Ab</a>
+					<a class="a2">A</a>
+					<a class="bb2">Bb</a>
+					<a class="b2">B</a>
+				</div>
+				<div id="E_notes">
+					<a class="e1">E</a>
+					<a class="f1">F</a>
+					<a class="fsharp1">F#</a>
+					<a class="g1">G</a>
+					<a class="gsharp1">Ab</a>
+					<a class="a1">A</a>
+					<a class="bb1">Bb</a>
+					<a class="b1">B</a>
+					<a class="c2">C</a>
+					<a class="csharp2">Db</a>
+					<a class="d2">D</a>
+					<a class="eb2">Eb</a>
+					<a class="e2">E</a>
+					<a class="f2">F</a>
+					<a class="fsharp2">F#</a>
+				</div>
+			</div>
+		</div>
+		<div id="lower">
+			<img src="/assets/img/loading.gif" id="ajaxload" style="display:none;" width="20" height="6" /><br />
+			<a id="chord_listen" class="btn btn-primary" href="javascript:;"><strong>Listen to selected notes</strong></a>
+			<a id="store_chord" class="btn btn-primary disabled" href="javascript:;">Store This Chord</a>
+			<a id="clear_selections" class="btn btn-danger" href="javascript:;">Clear Selections</a>	
+			<table>
+				<tr>
+					<td><strong>Chosen Notes:</strong></td>
+					<td id="chosen_notes"></td>
+				</tr>
+				<tr>
+					<td><strong>Exact Match Chords:</strong></td>
+					<td id="exact_results"></td>
+				</tr>
+				<tr>
+					<td><strong>Partial Match Chords:</strong></td>
+					<td id="chord_results"></td>
+				</tr>
+			</table>
+			
+			<p>
+				URL to this chord: <input type="text" id="frets_url" style="width:500px;display:inline" class="form-control" />
+			</p>
+			<h3>Saved Chords</h3>
+			<div id="stored_chords" class="btn_toolbar">
+				<p><em>Nothing here yet... To store a chord click the 'Store This Chord' button above.</em></p>
+			</div>
+			<g:plusone annotation="inline"></g:plusone>
+			<h2>What is Name That Chord?</h2>
+			<p>
+				Name That Chord is a free interactive online guitar chord finder and guitar chord identifier.  
+				It allows you to select frets and see which chord they make; this promotes experimentation and learning the notes on the fretboard.  Use this tool 
+				alongside your guitar lessons and music theory lessons.
+			</p>
+			<h2>How It Works</h2>
+			<p>
+				Usage is pretty simple:
+			</p>
+			<ul>
+				<li>Click the notes on the fretboard to select/deselect them and see the results instantly.</li>
+				<li>Chords that match the selected notes exactly will show in the 'Exact Match Chords' line.</li>
+				<li>Chords that contain all the selected notes, but include other non-selected notes will show in the 'Partial Match Chords' line.</li>
+			</ul>	
+		</div>
+		<div id="audio"></div>
+		<script>var url_params = [];</script>

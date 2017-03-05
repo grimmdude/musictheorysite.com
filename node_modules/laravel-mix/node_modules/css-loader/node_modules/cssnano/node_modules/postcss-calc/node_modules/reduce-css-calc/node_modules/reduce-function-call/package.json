@@ -1,0 +1,76 @@
+{
+  "name": "reduce-function-call",
+  "version": "1.0.2",
+  "description": "Reduce function calls in a string, using a callback",
+  "keywords": [
+    "string",
+    "reduce",
+    "replacement",
+    "function",
+    "call",
+    "eval",
+    "interpret"
+  ],
+  "author": {
+    "name": "MoOx"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoOx/reduce-function-call.git"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "dependencies": {
+    "balanced-match": "^0.4.2"
+  },
+  "devDependencies": {
+    "jscs": "^2.0.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "npmpub": "^3.1.0",
+    "tap-colorize": "^1.2.0",
+    "tape": "^4.0.3"
+  },
+  "scripts": {
+    "jscs": "jscs *.js **/*.js",
+    "jshint": "jshint . --exclude node_modules --reporter node_modules/jshint-stylish/index.js",
+    "test": "npm run jscs && npm run jshint && tape test | tap-colorize",
+    "release": "npmpub"
+  },
+  "gitHead": "0e5721cbbef019419abb593dce4862794cad4872",
+  "bugs": {
+    "url": "https://github.com/MoOx/reduce-function-call/issues"
+  },
+  "homepage": "https://github.com/MoOx/reduce-function-call#readme",
+  "_id": "reduce-function-call@1.0.2",
+  "_shasum": "5a200bf92e0e37751752fe45b0ab330fd4b6be99",
+  "_from": "reduce-function-call@>=1.0.1 <2.0.0",
+  "_npmVersion": "3.10.8",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "moox",
+    "email": "m@moox.io"
+  },
+  "dist": {
+    "shasum": "5a200bf92e0e37751752fe45b0ab330fd4b6be99",
+    "tarball": "https://registry.npmjs.org/reduce-function-call/-/reduce-function-call-1.0.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "moox",
+      "email": "m@moox.io"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/reduce-function-call-1.0.2.tgz_1480317784283_0.19223617459647357"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/reduce-function-call/-/reduce-function-call-1.0.2.tgz",
+  "readme": "ERROR: No README data found!"
+}

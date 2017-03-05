@@ -1,0 +1,95 @@
+{
+  "name": "image-size",
+  "version": "0.5.1",
+  "description": "get dimensions of any image file",
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "bin": {
+    "image-size": "bin/image-size.js"
+  },
+  "scripts": {
+    "pretest": "jshint",
+    "test": "mocha specs",
+    "coverage": "istanbul cover _mocha specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/image-size/image-size.git"
+  },
+  "keywords": [
+    "image",
+    "size",
+    "dimensions",
+    "resolution",
+    "width",
+    "height",
+    "png",
+    "jpeg",
+    "bmp",
+    "gif",
+    "psd",
+    "tiff",
+    "webp",
+    "svg"
+  ],
+  "author": {
+    "name": "netroy",
+    "email": "aditya@netroy.in",
+    "url": "http://netroy.in/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "escomplex-js": "^1.2.0",
+    "expect.js": "^0.3.1",
+    "glob": "^7.1.1",
+    "istanbul": "^0.4.0",
+    "jshint": "^2.8.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.2"
+  },
+  "gitHead": "05fd80685ea70b2b7a27e76b16bc614f0949b4f4",
+  "bugs": {
+    "url": "https://github.com/image-size/image-size/issues"
+  },
+  "homepage": "https://github.com/image-size/image-size#readme",
+  "_id": "image-size@0.5.1",
+  "_shasum": "28eea8548a4b1443480ddddc1e083ae54652439f",
+  "_from": "image-size@>=0.5.0 <0.6.0",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.3.0",
+  "_npmUser": {
+    "name": "netroy",
+    "email": "aditya@netroy.in"
+  },
+  "dist": {
+    "shasum": "28eea8548a4b1443480ddddc1e083ae54652439f",
+    "tarball": "https://registry.npmjs.org/image-size/-/image-size-0.5.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "netroy",
+      "email": "aditya@netroy.in"
+    },
+    {
+      "name": "shinnn",
+      "email": "snnskwtnb@gmail.com"
+    },
+    {
+      "name": "zeke",
+      "email": "zeke@sikelianos.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/image-size-0.5.1.tgz_1482704788414_0.32357512530870736"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/image-size/-/image-size-0.5.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

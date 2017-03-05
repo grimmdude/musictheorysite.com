@@ -1,0 +1,25 @@
+{
+  "name": "musictheorysite.com",
+  "version": "1.0.0",
+  "authors": [
+    "Grimm Media LLC"
+  ],
+  "license": "MIT",
+  "homepage": "http://musictheorysite.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery" : "1.11.1",
+    "bootstrap": "~3.2.0",
+    "modernizr":"latest",
+    "angular":"latest",
+    "underscore":"1.7.0",
+    "raphael":"2.1.1"
+  }
+}

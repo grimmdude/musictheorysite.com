@@ -1,0 +1,182 @@
+---
+layout: default
+title:  Name That Key - Find a Song's Key by It's Chords | Music Theory Site
+seo_title: Intervals in Western Music Theory Explained | Music Theory Site
+description: A simple web tool that easily helps you find the key of a song by it's chords.
+keywords: find a song key by chords, figure out a keys, music, chords, guitar, piano, find key online tool,major,minor,dominant,diminished,augmented
+sidebar: false
+---
+<div id="instructions">
+	<p>To identify the key of a song by it's chords choose the chords below and see the highlighted slices on the circle of fifths to the right.  This searches all 12 possible keys for the selected chords (diatonically) and returns the keys with most matches.  If there is more than one key that contains the selected chords it will display all relevant keys.</p>
+	<p>Clicking any key in the circle of fifths will display all diatonic chords within that key as guitar chords for you string ticklers.</p>
+</div>
+<div id="ie_nag" style="display:none">
+	<p>Name That Key works in Internet Explorer, but is best viewed in Firefox: <a href='http://www.mozilla.com/en-US/' target="_blank" title="Download Firefox">Download</a></p>
+</div>
+<div class="row">
+	<div id="enterchords" class="col-md-6 col-lg-6">
+		<h3>#1 Pick Chords to Find the Key</h3>
+		<table id="chord_selector" class="table">
+			<tr><th style="border:0;">M</th><th style="border:0;">m</th><th style="border:0;">7</th><th style="border:0;">M7</th><th style="border:0;">m7</th><th style="border:0;">dim°</th></tr>
+			<tr><td>C</td><td>Cm</td><td>C7</td><td>Cmaj7</td><td>Cm7</td><td>Cdim</td></tr>
+			<tr><td>C<span class="accidental sharp"></span></td><td>C<span class="accidental sharp"></span>m</td><td>C<span class="accidental sharp"></span>7</td><td>C<span class="accidental sharp"></span>maj7</td><td>C<span class="accidental sharp"></span>m7</td><td>C<span class="accidental sharp"></span>dim</td></tr>
+			<tr><td>D<span class="accidental flat"></span></td><td>D<span class="accidental flat"></span>m</td><td>D<span class="accidental flat"></span>7</td><td>D<span class="accidental flat"></span>maj7</td><td>D<span class="accidental flat"></span>m7</td><td>D<span class="accidental flat"></span>dim</td></tr>
+			<tr><td>D</td><td>Dm</td><td>D7</td><td>Dmaj7</td><td>Dm7</td><td>Ddim</td></tr>
+			<tr><td>D<span class="accidental sharp"></span></td><td>D<span class="accidental sharp"></span>m</td><td>D<span class="accidental sharp"></span>7</td><td>D<span class="accidental sharp"></span>maj7</td><td>D<span class="accidental sharp"></span>m7</td><td>D<span class="accidental sharp"></span>dim</td></tr>
+			<tr><td>E<span class="accidental flat"></span></td><td>E<span class="accidental flat"></span>m</td><td>E<span class="accidental flat"></span>7</td><td>E<span class="accidental flat"></span>maj7</td><td>E<span class="accidental flat"></span>m7</td><td>E<span class="accidental flat"></span>dim</td></tr>
+			<tr><td>E</td><td>Em</td><td>E7</td><td>Emaj7</td><td>Em7</td><td>Edim</td></tr>
+			<tr><td>E<span class="accidental sharp"></span></td><td>E<span class="accidental sharp"></span>m</td><td>E<span class="accidental sharp"></span>7</td><td>E<span class="accidental sharp"></span>maj7</td><td>E<span class="accidental sharp"></span>m7</td><td>E<span class="accidental sharp"></span>dim</td></tr>
+			<tr><td>F</td><td>Fm</td><td>F7</td><td>Fmaj7</td><td>Fm7</td><td>Fdim</td></tr>
+			<tr><td>F#</td><td>F<span class="accidental sharp"></span>m</td><td>F<span class="accidental sharp"></span>7</td><td>F<span class="accidental sharp"></span>maj7</td><td>F<span class="accidental sharp"></span>m7</td><td>F<span class="accidental sharp"></span>dim</td></tr>
+			<tr><td>G<span class="accidental flat"></span></td><td>G<span class="accidental flat"></span>m</td><td>G<span class="accidental flat"></span>7</td><td>G<span class="accidental flat"></span>maj7</td><td>G<span class="accidental flat"></span>m7</td><td>G<span class="accidental flat"></span>dim</td></tr>
+			<tr><td>G</td><td>Gm</td><td>G7</td><td>Gmaj7</td><td>Gm7</td><td>Gdim</td></tr>
+			<tr><td>G<span class="accidental sharp"></span></td><td>G<span class="accidental sharp"></span>m</td><td>G<span class="accidental sharp"></span>7</td><td>G<span class="accidental sharp"></span>maj7</td><td>G<span class="accidental sharp"></span>m7</td><td>G<span class="accidental sharp"></span>dim</td></tr>
+			<tr><td>Ab</td><td>A<span class="accidental flat"></span>m</td><td>A<span class="accidental flat"></span>7</td><td>A<span class="accidental flat"></span>maj7</td><td>A<span class="accidental flat"></span>m7</td><td>A<span class="accidental flat"></span>dim</td></tr>
+			<tr><td>A</td><td>Am</td><td>A7</td><td>Amaj7</td><td>Am7</td><td>Adim</td></tr>
+			<tr><td>A<span class="accidental sharp"></span></td><td>A<span class="accidental sharp"></span>m</td><td>A<span class="accidental sharp"></span>7</td><td>A<span class="accidental sharp"></span>maj7</td><td>A<span class="accidental sharp"></span>m7</td><td>A<span class="accidental sharp"></span>dim</td></tr>
+			<tr><td>Bb</td><td>B<span class="accidental flat"></span>m</td><td>B<span class="accidental flat"></span>7</td><td>B<span class="accidental flat"></span>maj7</td><td>B<span class="accidental flat"></span>m7</td><td>B<span class="accidental flat"></span>dim</td></tr>
+			<tr><td>B</td><td>Bm</td><td>B7</td><td>Bmaj7</td><td>Bm7</td><td>Bdim</td></tr>
+			<tr><td>B<span class="accidental sharp"></span></td><td>B<span class="accidental sharp"></span>m</td><td>B<span class="accidental sharp"></span>7</td><td>B<span class="accidental sharp"></span>maj7</td><td>B<span class="accidental sharp"></span>m7</td><td>B<span class="accidental sharp"></span>dim</td></tr>
+		</table>
+		
+		<p><button class='btn btn-danger' id="clear_selected">Clear Selections</button></p>
+	</div>
+	<div id="result" class="col-md-6 col-lg-6">
+		<h3>#2  See The Key</h3>
+		<p id="thekey"></p>
+		<div id="keyletter"></div>
+		<div id="circle_of_fifths" style="display:none">
+			<!--Major Pie-->
+			<div id="major_pie">
+				<div id="C_Major" class="hold">
+		    		<div class="pie"></div>
+				</div>
+				<div id="D_Major" class="hold">
+		 			<div class="pie"></div>
+				</div>
+				<div id="G_Major" class="hold">
+		 			<div class="pie"></div>
+				</div>
+				<div id="A_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="E_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="B_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="Fsharp_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="Csharp_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="Ab_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="Eb_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="Bb_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+				<div id="F_Major" class="hold">
+					<div class="pie"></div>
+				</div>
+			</div>
+
+			<!--Minor Pie-->
+			<div id="minor_pie">
+				<div id="A_Minor" class="hold_minor">
+		 			<div class="pie_minor"></div>
+				</div>
+				<div id="B_Minor" class="hold_minor">
+		 			<div class="pie_minor"></div>
+				</div>
+				<div id="E_Minor" class="hold_minor">
+					<div class="pie_minor"></div>
+				</div>
+				<div id="Fsharp_Minor" class="hold_minor">
+		 			<div class="pie_minor"></div>
+				</div>
+				<div id="Csharp_Minor" class="hold_minor">
+		 			<div class="pie_minor"></div>
+				</div>
+				<div id="Ab_Minor" class="hold_minor">
+		  			<div class="pie_minor"></div>
+				</div>
+				<div id="Eb_Minor" class="hold_minor">
+		  			<div class="pie_minor"></div>
+				</div>
+				<div id="Bb_Minor" class="hold_minor">
+		   			<div class="pie_minor"></div>
+				</div>
+				<div id="F_Minor" class="hold_minor">
+		   			<div class="pie_minor"></div>
+				</div>
+				<div id="C_Minor" class="hold_minor">
+		   			<div class="pie_minor"></div>
+				</div>
+				<div id="G_Minor" class="hold_minor">
+		   			<div class="pie_minor"></div>
+				</div>
+				<div id="D_Minor" class="hold_minor">
+		   			<div class="pie_minor"></div>
+				</div>
+			</div>
+
+			<!--Major Labels-->
+			<div id="key_labels">
+				<div id="C_Major-label">C</div>
+				<div id="G_Major-label">G</div>
+				<div id="D_Major-label">D</div>
+				<div id="A_Major-label">A</div>
+				<div id="E_Major-label">E</div>
+				<div id="B_Major-label">B</div>
+				<div id="Fsharp_Major-label">F<span class="accidental sharp"></span></div>
+				<div id="Db_Major-label">D<span class="accidental flat"></span></div>
+				<div id="Ab_Major-label">A<span class="accidental flat"></span></div>
+				<div id="Eb_Major-label">E<span class="accidental flat"></span></div>
+				<div id="Bb_Major-label">B<span class="accidental flat"></span></div>
+				<div id="F_Major-label">F</div>
+
+				   <!--Minor Labels-->
+				<div id="C_Minor-label">Cm</div>
+				<div id="G_Minor-label">Gm</div>
+				<div id="D_Minor-label">Dm</div>
+				<div id="A_Minor-label">Am</div>
+				<div id="E_Minor-label">Em</div>
+				<div id="B_Minor-label">Bm</div>
+				<div id="Fsharp_Minor-label">F<span class="accidental sharp"></span>m</div>
+				<div id="Csharp_Minor-label">D<span class="accidental flat"></span>m</div>
+				<div id="Ab_Minor-label">A<span class="accidental flat"></span>m</div>
+				<div id="Eb_Minor-label">E<span class="accidental flat"></span>m</div>
+				<div id="Bb_Minor-label">B<span class="accidental flat"></span>m</div>
+				<div id="F_Minor-label">Fm</div>
+			</div>
+		</div>
+		<div id="ie_results" style="display:none;">
+			<table id="ie_keys">
+			<tr><th>Major</th><th>Minor</th></tr>
+			<tr><td id="ie_C_Major"><a href="diatonic_tabs.html?key=C">C</a></td><td id="ie_A_Minor"><a href="diatonic_tabs.html?key=Am">Am</a></td></tr>
+			<tr><td id="ie_G_Major"><a href="diatonic_tabs.html?key=G">G</a></td><td id="ie_E_Minor"><a href="diatonic_tabs.html?key=Em">Em</a></td></tr>
+			<tr><td id="ie_D_Major"><a href="diatonic_tabs.html?key=D">D</a></td><td id="ie_B_Minor"><a href="diatonic_tabs.html?key=Bm">Bm</a></td></tr>
+			<tr><td id="ie_A_Major"><a href="diatonic_tabs.html?key=A">A</a></td><td id="ie_Fsharp_Minor"><a href="diatonic_tabs.html?key=Fsharpm">F<span class="accidental sharp"></span>m</a></td></tr>
+			<tr><td id="ie_E_Major"><a href="diatonic_tabs.html?key=E">E</a></td><td id="ie_Db_Minor"><a href="diatonic_tabs.html?key=Dbm">Dbm</a></td></tr>
+			<tr><td id="ie_B_Major"><a href="diatonic_tabs.html?key=B">B</a></td><td id="ie_Ab_Minor"><a href="diatonic_tabs.html?key=Abm">Abm</a></td></tr>
+			<tr><td id="ie_Fsharp_Major"><a href="diatonic_tabs.html?key=Fsharp">F<span class="accidental sharp"></span></a></td><td id="ie_Eb_Minor"><a href="diatonic_tabs.html?key=Ebm">Ebm</a></td></tr>
+			<tr><td id="ie_Db_Major"><a href="diatonic_tabs.html?key=Db">Db</a></td><td id="ie_Bb_Minor"><a href="diatonic_tabs.html?key=Bbm">Bbm</a></td></tr>
+			<tr><td id="ie_Ab_Major"><a href="diatonic_tabs.html?key=Ab">Ab</a></td><td id="ie_F_Minor"><a href="diatonic_tabs.html?key=Fm">Fm</a></td></tr>
+			<tr><td id="ie_Eb_Major"><a href="diatonic_tabs.html?key=Eb">Eb</a></td><td id="ie_C_Minor"><a href="diatonic_tabs.html?key=Cm">Cm</a></td></tr>
+			<tr><td id="ie_Bb_Major"><a href="diatonic_tabs.html?key=Bb">Bb</a></td><td id="ie_G_Minor"><a href="diatonic_tabs.html?key=Gm">Gm</a></td></tr>
+			<tr><td id="ie_F_Major"><a href="diatonic_tabs.html?key=F">F</a></td><td id="ie_D_Minor"><a href="diatonic_tabs.html?key=Dm">Dm</a></td></tr>
+			</table>
+		</div>
+	</div>
+</div>
+<p>By
+	<a href="http://www.grimmdude.com/">Garrett Grimm</a>,
+	<a href="http://robmadethis.com/">Rob Law</a>, &amp;
+	<a href="http://fady.io">Fady</a>
+</p>
