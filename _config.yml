@@ -16,17 +16,13 @@
 title: MusicTheorySite.com - Quick Tutorials &amp; Tips on Music Theory, Constructing Chord Progressions, and Improvisation. | Music Theory Site
 author: Garrett Grimm
 email: garret@grimmdude.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description:  MusicTheorySite.com is your online resource for learning the basics of music theory from reading notes on a staff to constructing chord progressions for songwriters.  We also provide free online tools for determining the key of a song and help identifying chords on the guitar.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://musictheorysite.com" # the base hostname & protocol for your site, e.g. http://example.com
 analytics_account: UA-1454657-16
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 theme: minima
 gems:
@@ -34,3 +30,5 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - bower_components
