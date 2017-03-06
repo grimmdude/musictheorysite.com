@@ -55,7 +55,7 @@ header h1 {margin:12px 0;background-image: url(/assets/img/round_mts_logo.gif) !
 .intro {font-size:16px;}
 .body_ad {text-align:center;}
 article p {line-height:25px;}
-footer {margin-bottom:30px;}
+footer {margin-bottom:30px;border-top:2px solid #e1dbce;padding:8px 0;}
 #bottom_share_bar {height:38px;width:100%;position:fixed;bottom:0;background:#fff;border-top:1px solid #ddd;padding:8px 0;}
 
 .accidental {font-family: 'accidentalsregular';}

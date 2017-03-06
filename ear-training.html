@@ -1,0 +1,72 @@
+---
+layout: default
+title:  Ear Training Exercises
+seo_title: Ear Training Exercises | Music Theory Site
+description: Improve or perfect your interval recognition skills with these ear training Exercises.
+keywords: ear training,excercises,quiz,test,practice,intervals,major,minor
+sidebar: true
+---
+
+<style type="text/css">
+	#playButton 
+	{
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(95,95,95,1);
+    font-size: 1.5em;
+    display: block;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(36,36,36,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(36,36,36,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(36,36,36,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+
+	}
+	#playButton:active, #playButton.playing {-webkit-box-shadow: 0px 3px 0px rgba(36,36,36,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(36,36,36,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(36,36,36,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;}
+	.incorrect {color:red !important;}
+</style>
+<p>Here is a tool for praciticing interval recognition.  Listen to the two notes and choose the correct interval with the buttons below.</p>
+<div ng-app="earTraining" ng-controller="EarTrainingCtrl" ng-cloak style="max-width:300px;margin:auto;">
+	<div class="row" style="background:#FCFBFA;box-shadow:0px 0px 15px 0px #ccc;-moz-border-radius:14px;-webkit-border-radius:14px;border-radius:14px;">
+		<div class="col-xs-12">
+			<p>Score: <span class="badge"><%score%>/<%numberOfClicks%></span> <small>(<%scorePercent%>%)</small></p>
+			<div style="height:75px;">
+				<a id="playButton" ng-click="playNotes(700, true)" ng-class="{'playing':notesPlaying}">
+					<span style="cursor:pointer;">Play</span>
+				</a>
+				<p class="alert alert-success" id="successMessage" style="display:none;text-align:center;padding:5px;position:relative;"><%successMessage%></p>
+			</div>			
+			<p ng-repeat="type in ['Unison','Tritone']" style="text-align:center;">
+				<button class="btn" ng-click="handleOptionSelect(type);" ng-class="{'selected disabled' : selectedOptions.indexOf(type) != -1, 'btn-success' : correctOption(type) && selectedOption(type), 'incorrect' : !correctOption(type) && selectedOption(type), 'btn-warning': !selectedOption(type) || !correctOption(type)}"><%type%></button>
+			</p>
+		</div>
+		<div class="col-xs-6">
+			<p ng-repeat="type in ['Perfect','Major','Minor']" style="text-align:center;">
+				<button class="btn" style="width:75px;" ng-click="handleOptionSelect(type);" ng-class="{'selected disabled' : selectedOptions.indexOf(type) != -1, 'btn-success' : correctOption(type) && selectedOption(type), 'incorrect' : !correctOption(type) && selectedOption(type), 'btn-warning': !selectedOption(type) || !correctOption(type)}"><%type%></button>
+			</p>
+		</div>
+		<div class="col-xs-6">
+			<p ng-repeat="degree in ['2nd','3rd','4th','5th','6th','7th']" style="text-align:center;">
+				<button class="btn" style="width:65px;" ng-click="handleOptionSelect(degree);" id="<%degree%>" ng-class="{'selected disabled' : selectedOptions.indexOf(degree) != -1, 'btn-success' : correctOption(degree) && selectedOption(degree), 'incorrect' : !correctOption(degree) && selectedOption(degree), 'btn-warning': !selectedOption(degree) || !correctOption(degree)}"><%degree%></button>
+			</p>
+		</div>
+	</div>
+</div>
+<!--<script src="http://musictheorysite.com/bower_components/modernizr/modernizr.js"></script>-->
+<script src="/assets/build/angular.min.js"></script>
+<script src="/assets/build/ear-training.js?1"></script>

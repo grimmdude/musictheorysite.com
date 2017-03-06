@@ -23,6 +23,9 @@ module.exports = function(grunt) {
           'assets/build/vexflow.js' : [
                           'node_modules/vextab/releases/vextab-div.js',
                           'assets/js/vexflow-config.js'
+          ],
+          'assets/build/angular.min.js' : [
+                          'bower_components/angular/angular.min.js'
           ]
         }
       },
@@ -49,12 +52,20 @@ module.exports = function(grunt) {
           'assets/build/vexflow.min.js':['assets/build/vexflow.js']
         }
       }
+    },
+    cssmin: {
+      target: {
+        files: {
+          'assets/build/style.min.css': ['assets/build/style.css']
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat','uglify']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 };
