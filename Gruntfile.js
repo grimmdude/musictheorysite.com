@@ -12,12 +12,14 @@ module.exports = function(grunt) {
                           'assets/js/ear-training/*.js'
                           ],
           'assets/build/main.js' : [
+                          'bower_components/js-cookie/src/js.cookie.js',
                           'bower_components/jquery/dist/jquery.js',
                           'bower_components/underscore/underscore-min.js',
                           'assets/js/namethatkey.js',
                           'assets/js/scale_generator.js',
                           'assets/js/namethatchord.js',
-                          'bower_components/bootstrap/dist/js/bootstrap.min.js'
+                          'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                          'assets/js/app.js'
 
           ],
           'assets/build/vexflow.js' : [

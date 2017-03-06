@@ -20,6 +20,7 @@
     "modernizr":"latest",
     "angular":"1.6.*",
     "underscore":"1.7.0",
-    "raphael":"2.1.1"
+    "raphael":"2.1.1",
+    "js-cookie":"latest"
   }
 }
