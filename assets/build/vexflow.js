@@ -46748,7 +46748,7 @@ Artist = (function() {
     }
     this.rendered = true;
     if (!Artist.NOLOGO) {
-      LOGO = "vexflow.com";
+      LOGO = Artist.LOGO || "vexflow.com";
       width = ctx.measureText(LOGO).width;
       ctx.save();
       ctx.setFont("Times", 10, "italic");
@@ -48283,4 +48283,5 @@ module.exports = VexTab;
 
 },{"../build/vextab-jison.js":1,"lodash":4,"vexflow":7}]},{},[9])(9)
 });
-Artist.NOLOGO = true;
+//Artist.NOLOGO = true;
+Artist.LOGO = 'musictheorysite.com';

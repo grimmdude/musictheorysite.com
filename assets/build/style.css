@@ -33,7 +33,7 @@
 	
 }
 
-body {background:#FCFCF5;color:#282828;-webkit-font-smoothing:antialiased;padding-top:47px;line-height:1.6;}
+body {background:#FCFCF5;color:#282828;-webkit-font-smoothing:antialiased;padding-top:47px;line-height:1.7;}
 h1, h2, h3, h4, h5 {font-family:'Merriweather','serif';}
 h1, .h1 {font-size:30px;}
 h2, .h2 {font-size:26px;}
@@ -45,7 +45,7 @@ h2 {border-bottom: 2px solid #e1dbce;}
 h3 {border-bottom:1px solid #e1dbce;font-size:1.5em;}
 blockquote, table.blockquote {background-color:#ffffff;border: 1px solid #E1DBCE;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;box-shadow: 0px 0px 10px -3px #CCC;font-size:14px;}
 blockquote p {font-size:14px;}
-img {border:1px solid #E1DBCE;}
+img {border:2px solid #E1DBCE;}
 	img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 header h1 {margin:12px 0;background-image: url(/assets/img/round_mts_logo.gif) !important;background-repeat: no-repeat;padding-left: 70px;line-height: 62px;color:#282828;}
 #sidebar {border-left:1px solid #C9C6B3;}
@@ -65,7 +65,8 @@ footer {margin-bottom:30px;border-top:2px solid #e1dbce;padding:8px 0;}
     .accidental.double-flat:before {content:'\1d12b';}
     .accidental.double-sharp:before {content:'\1d12a'}
 
-.stave, .vex-canvas {background:#FFFFFF;border:2px solid #E1DBCE;}
+.stave, .vex-canvas, .notation {background:#FFFFFF;border:2px solid #E1DBCE;}
+
 
 /* bootstrap changes */
 a.btn:link, a.btn:visited {text-decoration:none !important;}

@@ -1,1 +1,2 @@
-Artist.NOLOGO = true;
+//Artist.NOLOGO = true;
+Artist.LOGO = 'musictheorysite.com';
