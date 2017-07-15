@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: MusicTheorySite.com - Quick Tutorials &amp; Tips on Music Theory, Constructing Chord Progressions, and Improvisation. | Music Theory Site
 author: Garrett Grimm
+author_website: http://grimmdude.com
 email: garret@grimmdude.com
 description:  MusicTheorySite.com is your online resource for learning the basics of music theory from reading notes on a staff to constructing chord progressions for songwriters.  We also provide free online tools for determining the key of a song and help identifying chords on the guitar.
 baseurl: "" # the subpath of your site, e.g. /blog
