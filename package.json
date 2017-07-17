@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "deploy": "jekyll build && s3_website push"
+    "deploy": "grunt && jekyll build && s3_website push"
   },
   "devDependencies": {
     "axios": "^0.15.2",
