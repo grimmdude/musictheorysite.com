@@ -35,7 +35,7 @@ a {cursor:pointer;}
 h1 {line-height:45px;margin-bottom:30px;}
 h2 {border-bottom: 2px solid #e1dbce;}
 h3 {border-bottom:1px solid #e1dbce;font-size:1.5em;font-style:italic;}
-p {margin: 0 0 15px;}
+p, ul {margin: 0 0 15px;}
 blockquote, table.blockquote {background-color:#ffffff;border: 1px solid #E1DBCE;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;box-shadow: 0px 0px 10px -3px #CCC;font-size:14px;}
 blockquote p {font-size:14px;}
 img {border:2px solid #E1DBCE;}
