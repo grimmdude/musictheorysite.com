@@ -1,0 +1,72 @@
+body {
+  background: white;
+  font-family: 'Lobster Two', cursivs;
+  font-size: 18px;
+  color: #222222;
+  margin: auto 0px;
+}
+
+a { text-decoration: none; color: black;
+    padding-bottom: 3px; border-bottom: dotted black 1px }
+a:link {text-decoration: none; color: black}
+a:visited {text-decoration: none; color: black}
+a:active {text-decoration: none; color: #003300}
+a:hover {text-decoration: none; color: green}
+
+#wrapper {
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  display: block;
+  padding: 20px;
+  width: 90%;
+}
+
+h1 {
+  color: black;
+  font-family: "Bowlby One SC", sans-serif;
+  font-size: 36px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.chord { float: left; padding-top: 8px;}
+.chordname {
+  width: 80%;
+  margin: auto;
+  font-family: "Marvel", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section {
+  padding-top: 30px;
+  clear: left;
+}
+
+.section .title {
+  color: black;
+  font-family: "Marvel", cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+.section .description {
+  color: #444444;
+  font-family: "Marvel", cursive;
+  font-size: 22px;
+}
+
+.topbar {
+  float: right;
+  font-family: "Marvel", cursive;
+  padding: 5px;
+  padding-left: 8px;
+  border-bottom: dotted green 1px;
+  border-left: dotted green 1px;
+}
+
+.topbar a { border: solid green 0px; }
+
+p { padding: 10px; }
+

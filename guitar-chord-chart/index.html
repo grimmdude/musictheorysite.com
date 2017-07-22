@@ -1,0 +1,23 @@
+---
+layout: default
+title:  Guitar Chord Chart
+seo_title: Guitar Chord Chart | Music Theory Site
+description: In this tutorial I'll show you how to read and recognize the different types of clefs and how they theoretically move the staff up or down the pitch ladder.
+keywords: music,theory,help,clefs,major,minor,key,signature,treble,bass,alto,tenor,notate,notating,transcriptions,transcribe,read,how,use,transpose
+---
+<div data-ng-app="guitarChordChart" data-ng-controller="GuitarChordController">
+	<p>Use this page to lookup guitar chords by name.</p>
+	<p>
+		<input type="" class="form-control" placeholder="Type chord name..." data-ng-model="chordName" data-ng-change="updateChord()" />
+	</p>
+	<h3>[[chordName]] <small data-ng-show="chordName">[[chordShapes.length]] shapes found</small></h3>
+	<div class="col-xs-12" id="chords-container">
+		<div id="render"></div>
+	</div>
+</div>
+
+
+<script src="/assets/build/angular.min.js"></script>
+<script src="/assets/build/raphael.js"></script>
+<script src="/assets/js/vexchords-master/js/chord.js"></script>
+<script src="/assets/build/guitar-chords.min.js"></script>
