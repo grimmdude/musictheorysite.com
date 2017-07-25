@@ -13,7 +13,8 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 		$('#chords-container').empty();
 
 		if ($scope.chordName) {
-			$scope.chordShapes = tonal_fretboard.chordShapes('guitar', tonal_chord.notes($scope.chordName), 0, 24, 4);
+			$scope.chordShapes = tonal_fretboard.chordShapes('guitar', tonal_chord.notes($scope.chordName), 0, 12, 4);
+			//$log.info($scope.chordShapes);
 			// Reverse so they're in order on page.
 			$scope.chordShapes.reverse();
 
@@ -25,20 +26,25 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 
 				// Position should be lowest played fret.
 				// Basically a Math.min() implementation but with considerations for null/Array values.
-				var position = shape.reduce(function(accum, value) {
+				var lowestFret = shape.reduce(function(accum, value) {
 					if (Array.isArray(value)) value = value[0];
 					return value && value < accum ? value : accum;
 				}, 100);
 
 				// If position is > 0 then dial it back one notch so lower frets don't appear as open ones.
-				position = position ? position - 1 : position;
+				if (lowestFret <= 2) {
+					var position = 0;
+
+				} else {
+					var position = parseInt(lowestFret);
+				}
 
 				chord.setChord(shape.reverse().map(function(item, index) {
 					if (Array.isArray(item)) {
-						var fret_number = item[0] - position;
+						var fret_number = item[0] - (position ? position - 1 : position);
 
 					} else if (item) {
-						var fret_number = item - position;
+						var fret_number = item - (position ? position - 1 : position);
 
 					} else {
 						var fret_number = 'x';
