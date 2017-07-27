@@ -18,7 +18,7 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 
 		if ($scope.chordName) {
 			$scope.chordShapes = tonal_fretboard.chordShapes('guitar', tonal_chord.notes($scope.chordName), 0, 12, 4);
-			$log.info($scope.chordShapes);
+			//$log.info($scope.chordShapes);
 			// Reverse so they're in order on page.
 			$scope.chordShapes.reverse();
 
