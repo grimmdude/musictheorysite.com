@@ -51,6 +51,8 @@ header h1 {margin:12px 0;background-image: url(/assets/img/round_mts_logo.gif) !
 	#sidebar h2 {font-size:18px;margin-bottom:12px;}
 	#sidebar ul {list-style-type:none;padding-left:0;line-height:25px;}
 		#sidebar ul li ul {list-style-type:none;padding-left:20px;line-height:25px;}
+
+#content, .navbar .container {max-width:960px;}
 #content a:link, #content a:visited {color:#282828;text-decoration:underline;}
 #content a:hover {}
 .intro {font-size:18px;}
@@ -82,6 +84,11 @@ a.btn:link, a.btn:visited {text-decoration:none !important;}
 
 /* Modals */
 .modal-title {font-size:22px;}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 
 #wrapper {
 	width:1000px;

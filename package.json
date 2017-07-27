@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "grunt && ls assets/build/",
+    "build": "node _scripts/generate-guitar-chord-pages.js && grunt",
     "deploy": "npm run build && jekyll build && s3_website push"
   },
   "devDependencies": {
@@ -17,6 +17,8 @@
     "vextab": "2.0.*"
   },
   "dependencies": {
+    "angular": "^1.6.5",
+    "raphael": "^2.2.7",
     "tonal-chord": "^0.69.7",
     "tonal-fretboard": "^0.69.7"
   }

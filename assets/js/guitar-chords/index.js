@@ -1,5 +1,8 @@
 var tonal_chord = require('tonal-chord');
 var tonal_fretboard = require('tonal-fretboard');
+var angular = require('angular');
+// Doesn't play nice with require()
+//var Raphael = require('raphael');
 
 angular.module('guitarChordChart', [], function($interpolateProvider) {
 		$interpolateProvider.startSymbol('[[');
@@ -14,7 +17,7 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 
 		if ($scope.chordName) {
 			$scope.chordShapes = tonal_fretboard.chordShapes('guitar', tonal_chord.notes($scope.chordName), 0, 12, 4);
-			//$log.info($scope.chordShapes);
+			$log.info($scope.chordShapes);
 			// Reverse so they're in order on page.
 			$scope.chordShapes.reverse();
 
@@ -58,5 +61,17 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 			});
 		}
 	};
+
+	/**
+	 * Ensure that the key name is capitalized.
+	 */
+	$scope.normalizedChordName = function() {
+		return $scope.chordName.substring(0, 1).toUpperCase() + $scope.chordName.substring(1);
+	};
+
+	if ($window.CHORDNAME) {
+		$scope.chordName = $window.CHORDNAME;
+		$scope.updateChord();
+	}
 }]);
 

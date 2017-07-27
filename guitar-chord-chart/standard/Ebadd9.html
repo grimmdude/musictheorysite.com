@@ -1,0 +1,21 @@
+---
+layout: default
+title:  Ebadd9 Guitar Chord Chart
+seo_title: Ebadd9 Guitar Chord Chart | Music Theory Site
+description: This page shows all reachable guitar chord shapes for the Ebadd9 chord.
+keywords: music,theory,help,clefs,major,minor,key,signature,treble,bass,alto,tenor,notate,notating,transcriptions,transcribe,read,how,use,transpose
+---
+<div data-ng-app="guitarChordChart" data-ng-controller="GuitarChordController">
+	<p>This page generates all the possible and, hopefully, reachable guitar chord shapes for the Ebadd9 chord.</p>
+	<h3 class="ng-cloak"><small data-ng-show="chordName">[[chordShapes.length]] shapes found</small></h3>
+	<div class="col-xs-12" id="chords-container"></div>
+</div>
+
+<script>
+	var TUNING = '{tuning}';
+	var CHORDNAME = 'Ebadd9';
+</script>
+
+<script src="/assets/build/raphael.js"></script>
+<script src="/assets/js/vexchords-master/js/chord.js"></script>
+<script src="/assets/build/guitar-chords.min.js"></script>
