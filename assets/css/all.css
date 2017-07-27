@@ -28,8 +28,8 @@
 }
 
 body {background:#FCFCF5;color:#282828;-webkit-font-smoothing:antialiased;padding-top:47px;line-height:1.9;font-size:16px;}
-h1, h2, h3, h4, h5 {font-family:'Merriweather','serif';}
-h1, .h1 {font-size:30px;font-weight:bold;}
+h1, h2, h3, h4, h5 {font-family:'Merriweather','serif';font-weight:bold;}
+h1, .h1 {font-size:30px;}
 h2, .h2 {font-size:26px;}
 a {cursor:pointer;}
 h1 {line-height:45px;margin-bottom:30px;}
