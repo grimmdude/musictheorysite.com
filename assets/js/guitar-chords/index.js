@@ -12,6 +12,17 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 	$scope.chordName = '';
 	$scope.chordShapes = [];
 
+	var randomChord = function() {
+		var notes = 'ABCDEFG'.split('');
+		var modes = ['M', 'm', ''];
+		var extensions = ['7', '9', ''];
+		return notes[randomNumber(notes.length)] + modes[randomNumber(modes.length)] + extensions[randomNumber(extensions.length)];
+	};
+
+	var randomNumber = function(max) {
+		return Math.floor(Math.random() * max)
+	};
+
 	$scope.updateChord = function() {
 		$('#chords-container').empty();
 
@@ -71,7 +82,11 @@ angular.module('guitarChordChart', [], function($interpolateProvider) {
 
 	if ($window.CHORDNAME) {
 		$scope.chordName = $window.CHORDNAME;
-		$scope.updateChord();
+
+	} else {
+		$scope.chordName = randomChord();
 	}
+
+	$scope.updateChord();
 }]);
 

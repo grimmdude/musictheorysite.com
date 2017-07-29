@@ -9,8 +9,9 @@ keywords: music,theory,help,clefs,major,minor,key,signature,treble,bass,alto,ten
 	<p>
 		This page is an experimental tool which allows you to lookup a guitar chord shape by name.  The shapes are generated on the fly based on the notes in the chord and how reachable they are on the neck.
 	</p>
+	<p><i>Type a chord in the field below to lookup it's possible shapes on the fretboard.</i></p>
 	<p>
-		<input type="" class="form-control" placeholder="Type a chord name (Gm, Bbmaj7, F#m7,...)" data-ng-model="chordName" data-ng-change="updateChord()" />
+		<input type="" class="form-control" placeholder="Type a chord name (Gm, Bbmaj7, F#m7,...)" data-ng-model="chordName" data-ng-change="updateChord()" autofocus />
 	</p>
 	<h3 class="ng-cloak">[[normalizedChordName()]] <small data-ng-show="chordName">[[chordShapes.length]] shapes found</small></h3>
 	<div class="col-xs-12" id="chords-container"></div>
