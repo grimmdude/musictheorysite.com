@@ -27,8 +27,8 @@ module.exports = function(grunt) {
                           'assets/js/namethatkey.js',
                           'assets/js/scale_generator.js',
                           'assets/js/namethatchord.js',
-                          'bower_components/bootstrap/dist/js/bootstrap.min.js',
-                          'assets/js/app.js'
+                          'bower_components/bootstrap/dist/js/bootstrap.min.js'
+                          //'assets/js/app.js'
 
           ],
           'assets/build/vexflow.js' : [
