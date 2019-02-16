@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "node _scripts/generate-guitar-chord-pages.js && grunt",
-    "deploy": "npm run build && jekyll build && s3_website push"
+    "build": "node _scripts/generate-guitar-chord-pages.js && grunt && bundle exec jekyll build",
+    "deploy": "npm run build && s3_website push"
   },
   "devDependencies": {
     "axios": "^0.15.2",
